@@ -1,3 +1,5 @@
+Archived! Use the latest Godot release instead or the V-Sekai [module](https://github.com/V-Sekai/godot-gltf-module/tree/gdnative) or [GDNative plugin](https://github.com/V-Sekai/godot-vrm/tree/godot3/addons/godot_gltf).
+
 # Godot Dynamic GLTF Loader
 A module for Godot that allows for loading `gltf`/`glb` data at runtime for Godot 3.2.4+
 
