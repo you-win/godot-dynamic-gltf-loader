@@ -1,4 +1,12 @@
-Archived! Use the latest Godot release instead or the V-Sekai [module](https://github.com/V-Sekai/godot-gltf-module/tree/gdnative) or [GDNative plugin](https://github.com/V-Sekai/godot-vrm/tree/godot3/addons/godot_gltf).
+Archived! Use the V-Sekai [module](https://github.com/V-Sekai/godot-gltf-module/tree/gdnative) or [GDNative plugin](https://github.com/V-Sekai/godot-vrm/tree/godot3/addons/godot_gltf). The GDNative plugin will allow you to use the normal release templates.
+
+If your project is on 3.4, then you can use my release templates [here](https://github.com/you-win/godot). Runtime GLTF loading is supported in Godot 3.4 but disabled in release builds for whatever reason. To build the template for yourself, run something like: `scons platform=windows target=release tools=no module_gltf=yes -j8` . I provide precompiled release templates [here](https://github.com/you-win/godot/releases/tag/3.3.2-gltf).
+
+In Godot 3.4, this API is exposed:
+```
+var gltf_loader := PackedSceneGLTF.new()
+var model = gltf_loader.import_gltf_scene("some_file_path.glb")
+```
 
 # Godot Dynamic GLTF Loader
 A module for Godot that allows for loading `gltf`/`glb` data at runtime for Godot 3.2.4+
